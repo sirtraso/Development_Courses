@@ -9,6 +9,6 @@ public class Main {
         mjfb.executeJavaForBeginnersMeethods();
 
         MainJavaAProfundidad mjap = new MainJavaAProfundidad();
-        mjap.executeJavaAProfundidadMethods();
+       // mjap.executeJavaAProfundidadMethods();
     }
 }
