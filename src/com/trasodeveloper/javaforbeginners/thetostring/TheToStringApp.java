@@ -17,7 +17,7 @@ class Frog {
         sb.append(id).append(": ").append(name);
         return sb.toString();*/
 
-        return String.format("%-4d: %s", id, name);
+        return String.format("%-6d: %s", id, name);
     }
 }
 

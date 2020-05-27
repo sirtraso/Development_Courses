@@ -2,8 +2,10 @@ package com.trasodeveloper.javaforbeginners;
 
 import com.trasodeveloper.javaforbeginners.Constructors.ConstructorTestApp;
 import com.trasodeveloper.javaforbeginners.gettersandreturnvalues.GettersApp;
+import com.trasodeveloper.javaforbeginners.inheritance.InheritanceApp;
 import com.trasodeveloper.javaforbeginners.methodparameters.MethodParamApp;
 import com.trasodeveloper.javaforbeginners.methods.MethodApp;
+import com.trasodeveloper.javaforbeginners.packages.PackagesApp;
 import com.trasodeveloper.javaforbeginners.settersandthis.SettersThisApp;
 import com.trasodeveloper.javaforbeginners.staticandfinal.StaticFinalApp;
 import com.trasodeveloper.javaforbeginners.stringbuildersandformatting.StringBuildersAndFormattingApp;
@@ -23,10 +25,11 @@ public class MainJavaForBeginners {
         * 5 -> (23) Static (and Final)
         * 6 -> (24) String Builder and String Formatting
         * 7 -> (25) The toString Method
-        *
+        * 8 -> (26) Inheritance
+        * 9 -> (27) Packages
         * ...
         * */
-        int codeToTest = 7;  //change this variable to define the class to test.
+        int codeToTest = 9;  //change this variable to define the class to test.
         this.selectingClass(codeToTest);
     }
 
@@ -63,6 +66,14 @@ public class MainJavaForBeginners {
             case 7:
                 TheToStringApp ttsa = new TheToStringApp();
                 ttsa.theToStringMainMethod();
+                break;
+            case 8:
+                InheritanceApp inapp = new InheritanceApp();
+                inapp.mainInheritanceApp();
+                break;
+            case 9:
+                PackagesApp papp = new PackagesApp();
+                papp.packagesAppMain();
                 break;
             default:
                 System.out.println("There is no course with that code");
