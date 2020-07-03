@@ -3,6 +3,7 @@ package com.trasodeveloper.javaforbeginners;
 import com.trasodeveloper.javaforbeginners.Constructors.ConstructorTestApp;
 import com.trasodeveloper.javaforbeginners.gettersandreturnvalues.GettersApp;
 import com.trasodeveloper.javaforbeginners.inheritance.InheritanceApp;
+import com.trasodeveloper.javaforbeginners.interfaces.InterfacesApp;
 import com.trasodeveloper.javaforbeginners.methodparameters.MethodParamApp;
 import com.trasodeveloper.javaforbeginners.methods.MethodApp;
 import com.trasodeveloper.javaforbeginners.packages.PackagesApp;
@@ -17,19 +18,20 @@ public class MainJavaForBeginners {
 
     public void executeJavaForBeginnersMeethods() {
         /* Content to test:
-        * 0 -> Test of (17), (18) -  Class, Methods
-        * 1 -> (19) Getters and Return Value
-        * 2 -> (20) Method Paramethers
-        * 3 -> (21) Setters and "this"
-        * 4 -> (22) Constructors
-        * 5 -> (23) Static (and Final)
-        * 6 -> (24) String Builder and String Formatting
-        * 7 -> (25) The toString Method
-        * 8 -> (26) Inheritance
-        * 9 -> (27) Packages
+        * 00 -> Test of (17), (18) -  Class, Methods
+        * 01 -> (19) Getters and Return Value
+        * 02 -> (20) Method Paramethers
+        * 03 -> (21) Setters and "this"
+        * 04 -> (22) Constructors
+        * 05 -> (23) Static (and Final)
+        * 06 -> (24) String Builder and String Formatting
+        * 07 -> (25) The toString Method
+        * 08 -> (26) Inheritance
+        * 09 -> (27) Packages
+        * 10 -> (28) Interfaces
         * ...
         * */
-        int codeToTest = 9;  //change this variable to define the class to test.
+        int codeToTest = 10;  //change this variable to define the class to test.
         this.selectingClass(codeToTest);
     }
 
@@ -74,6 +76,10 @@ public class MainJavaForBeginners {
             case 9:
                 PackagesApp papp = new PackagesApp();
                 papp.packagesAppMain();
+                break;
+            case 10:
+                InterfacesApp intapp = new InterfacesApp();
+                intapp.interfacesMainApp();
                 break;
             default:
                 System.out.println("There is no course with that code");
