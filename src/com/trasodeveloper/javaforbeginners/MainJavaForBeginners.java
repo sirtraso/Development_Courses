@@ -1,12 +1,16 @@
 package com.trasodeveloper.javaforbeginners;
 
 import com.trasodeveloper.javaforbeginners.Constructors.ConstructorTestApp;
+import com.trasodeveloper.javaforbeginners.castingnumericalvalues.CastingNumericalValues;
+import com.trasodeveloper.javaforbeginners.encapsulationapidocs.EncapAndAPIDocs;
 import com.trasodeveloper.javaforbeginners.gettersandreturnvalues.GettersApp;
 import com.trasodeveloper.javaforbeginners.inheritance.InheritanceApp;
 import com.trasodeveloper.javaforbeginners.interfaces.InterfacesApp;
 import com.trasodeveloper.javaforbeginners.methodparameters.MethodParamApp;
 import com.trasodeveloper.javaforbeginners.methods.MethodApp;
 import com.trasodeveloper.javaforbeginners.packages.PackagesApp;
+import com.trasodeveloper.javaforbeginners.polymorphism.Polymorphism;
+import com.trasodeveloper.javaforbeginners.publicprivateprotected.PermissionApp;
 import com.trasodeveloper.javaforbeginners.settersandthis.SettersThisApp;
 import com.trasodeveloper.javaforbeginners.staticandfinal.StaticFinalApp;
 import com.trasodeveloper.javaforbeginners.stringbuildersandformatting.StringBuildersAndFormattingApp;
@@ -29,9 +33,13 @@ public class MainJavaForBeginners {
         * 08 -> (26) Inheritance
         * 09 -> (27) Packages
         * 10 -> (28) Interfaces
+        * 11 -> (29) Public, Private, Protected
+        * 12 -> (30) Polymorphism
+        * 13 -> (31) Encapsulation and the API Docs
+        * 14 -> (32) Cating Numerical Values
         * ...
         * */
-        int codeToTest = 10;  //change this variable to define the class to test.
+        int codeToTest = 14;  //change this variable to define the class to test.
         this.selectingClass(codeToTest);
     }
 
@@ -81,6 +89,21 @@ public class MainJavaForBeginners {
                 InterfacesApp intapp = new InterfacesApp();
                 intapp.interfacesMainApp();
                 break;
+            case 11:
+                PermissionApp permapp = new PermissionApp();
+                permapp.mainPermissionApp();
+                break;
+            case 12:
+                Polymorphism poly = new Polymorphism();
+                poly.polymorphApp();
+                break;
+            case 13:
+                EncapAndAPIDocs eadocs = new EncapAndAPIDocs();
+                eadocs.mainEncapsuleAPIDocs();
+                break;
+            case 14:
+                CastingNumericalValues cnv = new CastingNumericalValues();
+                cnv.mainCastNumvalues();
             default:
                 System.out.println("There is no course with that code");
                 break;
