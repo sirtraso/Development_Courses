@@ -2,7 +2,7 @@ package com.trasodeveloper.javaforbeginners.stringbuildersandformatting;
 
 public class StringBuildersAndFormattingApp {
 
-    public void stringBuildersTestApp() {
+    public void mainStringBuildersTestApp() {
         //Codigo ineficiente
         String info = "";
 

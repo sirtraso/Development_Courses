@@ -24,7 +24,7 @@ class Machine {
 }
 
 public class ConstructorTestApp {
-    public void ConstructorTest() {
+    public void mainConstructorTest() {
         Machine machine1 = new Machine();
         Machine machine2 = new Machine("Wall-e");
         Machine machine3 = new Machine("Eva", 3);

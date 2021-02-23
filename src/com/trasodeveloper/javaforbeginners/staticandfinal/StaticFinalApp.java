@@ -25,7 +25,7 @@ class Things {
 }
 
 public class StaticFinalApp {
-    public void staticAndFinalTestApp() {
+    public void mainStaticAndFinalTestApp() {
         Things.description = "I am a Thing";
         System.out.println(Things.description);
         Things.showInfo();

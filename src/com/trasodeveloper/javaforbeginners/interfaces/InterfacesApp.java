@@ -1,7 +1,7 @@
 package com.trasodeveloper.javaforbeginners.interfaces;
 
 public class InterfacesApp {
-    public void interfacesMainApp(){
+    public void mainInterfacesApp(){
         Machine mach1 = new Machine();
         mach1.start();
 

@@ -15,7 +15,7 @@ class Robot {
 }
 
 public class MethodParamApp {
-    public void methodParamMain() {
+    public void mainMethodParam() {
         Robot wall_e = new Robot();
         wall_e.speak("Hi, I'm Wall-e");
         wall_e.jump(7);

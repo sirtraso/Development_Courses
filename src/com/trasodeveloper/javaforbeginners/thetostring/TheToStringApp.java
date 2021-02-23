@@ -23,7 +23,7 @@ class Frog {
 
 public class TheToStringApp {
 
-    public void theToStringMainMethod() {
+    public void mainTheToString() {
         //Object obj = new Object();
         //obj.
         Frog frog1 = new Frog(7, "Freddy");

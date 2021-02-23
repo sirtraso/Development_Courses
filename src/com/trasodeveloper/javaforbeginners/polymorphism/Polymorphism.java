@@ -2,7 +2,7 @@ package com.trasodeveloper.javaforbeginners.polymorphism;
 
 public class Polymorphism {
 
-    public void polymorphApp() {
+    public void mainPolymorphApp() {
         Plant plant1 = new Plant();
         Tree tree = new Tree();
 
