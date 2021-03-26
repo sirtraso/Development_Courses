@@ -6,6 +6,7 @@ import com.trasodeveloper.javaforbeginners.anonymousclases.AnonymousClasses;
 import com.trasodeveloper.javaforbeginners.castingnumericalvalues.CastingNumericalValues;
 import com.trasodeveloper.javaforbeginners.creatingwritingtextfiles.CreatingWritingTextFiles;
 import com.trasodeveloper.javaforbeginners.encapsulationapidocs.EncapAndAPIDocs;
+import com.trasodeveloper.javaforbeginners.enumtypes.EnumTypes;
 import com.trasodeveloper.javaforbeginners.equalsmethod.EqualsMethod;
 import com.trasodeveloper.javaforbeginners.genericswildcards.GenericsWildcards;
 import com.trasodeveloper.javaforbeginners.gettersandreturnvalues.GettersApp;
@@ -18,15 +19,20 @@ import com.trasodeveloper.javaforbeginners.methodparameters.MethodParamApp;
 import com.trasodeveloper.javaforbeginners.methods.MethodApp;
 import com.trasodeveloper.javaforbeginners.multipleexceptions.MultipleExceptions;
 import com.trasodeveloper.javaforbeginners.packages.PackagesApp;
+import com.trasodeveloper.javaforbeginners.passingbyvalue.PassingByValue;
 import com.trasodeveloper.javaforbeginners.polymorphism.Polymorphism;
 import com.trasodeveloper.javaforbeginners.publicprivateprotected.PermissionApp;
 import com.trasodeveloper.javaforbeginners.readingfilesfilereader.ReadingFilesFileReader;
 import com.trasodeveloper.javaforbeginners.readingfileswithscanner.ReadingFilesScanner;
+import com.trasodeveloper.javaforbeginners.recursionusefultrickupyoursleeve.RecursionTrick;
 import com.trasodeveloper.javaforbeginners.runtimecheckedexceptions.RuntimeCheckedExceptions;
+import com.trasodeveloper.javaforbeginners.serializationsavingobjects.SerializationSavingObjects;
+import com.trasodeveloper.javaforbeginners.serializingarrays.SerializingArrays;
 import com.trasodeveloper.javaforbeginners.settersandthis.SettersThisApp;
 import com.trasodeveloper.javaforbeginners.staticandfinal.StaticFinalApp;
 import com.trasodeveloper.javaforbeginners.stringbuildersandformatting.StringBuildersAndFormattingApp;
 import com.trasodeveloper.javaforbeginners.thetostring.TheToStringApp;
+import com.trasodeveloper.javaforbeginners.transientkeywordandmoreserialization.TransientKeyword;
 import com.trasodeveloper.javaforbeginners.trywithresources.TryWithResource;
 import com.trasodeveloper.javaforbeginners.upcastingdowncasting.UpcastDowncast;
 import com.trasodeveloper.javaforbeginners.usinggenerics.UsingGenerics;
@@ -68,9 +74,15 @@ public class MainJavaForBeginners {
         * 26 -> (44) Creating and Writing Text Files
         * 27 -> (45) The Equals Method
         * 28 -> (46) Inner Classes
+        * 29 -> (47) Enum Types: Basic and Advanced Usage
+        * 30 -> (48) Recursion: A Useful Trick Up Your Sleeve
+        * 31 -> (49) Serialization: Saving Objects to Files
+        * 32 -> (50) Serializing Arrays
+        * 33 -> (51) The Transient keyword and More Serialization
+        * 34 -> (52) Passing by Value
         * ...
         * */
-        int codeToTest = 28;  //change this variable to define the class to test.
+        int codeToTest = 34;  //change this variable to define the class to test.
         this.selectingClass(codeToTest);
     }
 
@@ -197,6 +209,30 @@ public class MainJavaForBeginners {
             case 28:
                 InnerClasses ic = new InnerClasses();
                 ic.mainInnerClasses();
+                break;
+            case 29:
+                EnumTypes et = new EnumTypes();
+                et.mainEnumTypes();
+                break;
+            case 30:
+                RecursionTrick rutu = new RecursionTrick();
+                rutu.mainRecursion();
+                break;
+            case 31:
+                SerializationSavingObjects sso = new SerializationSavingObjects();
+                sso.mainSerializationSO();
+                break;
+            case 32:
+                SerializingArrays sa = new SerializingArrays();
+                sa.mainSerialArrays();
+                break;
+            case 33:
+                TransientKeyword tk = new TransientKeyword();
+                tk.mainTransientKeyword();
+                break;
+            case 34:
+                PassingByValue pbv = new PassingByValue();
+                pbv.mainPassingByValue();
                 break;
             default:
                 System.out.println("There is no course with that code");
