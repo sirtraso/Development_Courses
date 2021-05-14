@@ -3,6 +3,7 @@ package com.trasodeveloper.javaforbeginners;
 import com.trasodeveloper.javaforbeginners.Constructors.ConstructorTestApp;
 import com.trasodeveloper.javaforbeginners.abstractclasses.AbstractClasses;
 import com.trasodeveloper.javaforbeginners.anonymousclases.AnonymousClasses;
+import com.trasodeveloper.javaforbeginners.arraylisteasyway.ArrayListEasyWay;
 import com.trasodeveloper.javaforbeginners.castingnumericalvalues.CastingNumericalValues;
 import com.trasodeveloper.javaforbeginners.creatingwritingtextfiles.CreatingWritingTextFiles;
 import com.trasodeveloper.javaforbeginners.encapsulationapidocs.EncapAndAPIDocs;
@@ -12,9 +13,11 @@ import com.trasodeveloper.javaforbeginners.genericswildcards.GenericsWildcards;
 import com.trasodeveloper.javaforbeginners.gettersandreturnvalues.GettersApp;
 import com.trasodeveloper.javaforbeginners.handingexcpetions.demo1.HandingExceptions;
 import com.trasodeveloper.javaforbeginners.handingexcpetions.demo2.HandingException;
+import com.trasodeveloper.javaforbeginners.hashmapobjectsviakey.HashMapviaKey;
 import com.trasodeveloper.javaforbeginners.inheritance.InheritanceApp;
 import com.trasodeveloper.javaforbeginners.innerclasses.InnerClasses;
 import com.trasodeveloper.javaforbeginners.interfaces.InterfacesApp;
+import com.trasodeveloper.javaforbeginners.linkedlists.LinkedLists;
 import com.trasodeveloper.javaforbeginners.methodparameters.MethodParamApp;
 import com.trasodeveloper.javaforbeginners.methods.MethodApp;
 import com.trasodeveloper.javaforbeginners.multipleexceptions.MultipleExceptions;
@@ -28,13 +31,16 @@ import com.trasodeveloper.javaforbeginners.recursionusefultrickupyoursleeve.Recu
 import com.trasodeveloper.javaforbeginners.runtimecheckedexceptions.RuntimeCheckedExceptions;
 import com.trasodeveloper.javaforbeginners.serializationsavingobjects.SerializationSavingObjects;
 import com.trasodeveloper.javaforbeginners.serializingarrays.SerializingArrays;
+import com.trasodeveloper.javaforbeginners.sets.Sets;
 import com.trasodeveloper.javaforbeginners.settersandthis.SettersThisApp;
+import com.trasodeveloper.javaforbeginners.sortedmaps.SortedMaps;
 import com.trasodeveloper.javaforbeginners.staticandfinal.StaticFinalApp;
 import com.trasodeveloper.javaforbeginners.stringbuildersandformatting.StringBuildersAndFormattingApp;
 import com.trasodeveloper.javaforbeginners.thetostring.TheToStringApp;
 import com.trasodeveloper.javaforbeginners.transientkeywordandmoreserialization.TransientKeyword;
 import com.trasodeveloper.javaforbeginners.trywithresources.TryWithResource;
 import com.trasodeveloper.javaforbeginners.upcastingdowncasting.UpcastDowncast;
+import com.trasodeveloper.javaforbeginners.usingcustomobjectsinmaps.CustomObjectsInSetsAndMaps;
 import com.trasodeveloper.javaforbeginners.usinggenerics.UsingGenerics;
 
 import java.io.FileNotFoundException;
@@ -45,6 +51,7 @@ public class MainJavaForBeginners {
 
     public void executeJavaForBeginnersMethods() {
         /* Content to test:
+        * // Sección 2 - Programming Core java
         * 00 -> Test of (17), (18) -  Class, Methods
         * 01 -> (19) Getters and Return Value
         * 02 -> (20) Method Paramethers
@@ -80,14 +87,31 @@ public class MainJavaForBeginners {
         * 32 -> (50) Serializing Arrays
         * 33 -> (51) The Transient keyword and More Serialization
         * 34 -> (52) Passing by Value
+        * // Seccion 3: The Java Collections Framework
+        * 35 -> (53) ArrayList: Arrays the Easy Way
+        * 36 -> (54) Linked Lists
+        * 37 -> (55) HashMap: Retrieving Objects via a Key
+        * 38 -> (56) Sorted Maps
+        * 39 -> (57) Sets
+        * 40 -> (58) Using Custom Objects in Sets and as Key in Maps
         * ...
         * */
-        int codeToTest = 34;  //change this variable to define the class to test.
+        int codeToTest = 40;  //change this variable to define the class to test.
         this.selectingClass(codeToTest);
     }
 
     public void selectingClass(int course) {
-        switch (course) {
+        if (course <= 34) {
+            sectionTwo(course);
+        } else if (course >= 35 && course <= 47) {
+            sectionThree(course);
+        } else {
+            System.out.println("There is no course with that code");
+        }
+    }
+
+    private void sectionTwo(int value) {
+        switch (value) {
             case 0:
                 MethodApp methapp = new MethodApp();
                 methapp.mainMethodApp();
@@ -113,8 +137,8 @@ public class MainJavaForBeginners {
                 sfa.mainStaticAndFinalTestApp();
                 break;
             case 6:
-                 StringBuildersAndFormattingApp sbfa = new StringBuildersAndFormattingApp();
-                 sbfa.mainStringBuildersTestApp();
+                StringBuildersAndFormattingApp sbfa = new StringBuildersAndFormattingApp();
+                sbfa.mainStringBuildersTestApp();
                 break;
             case 7:
                 TheToStringApp ttsa = new TheToStringApp();
@@ -238,6 +262,38 @@ public class MainJavaForBeginners {
                 System.out.println("There is no course with that code");
                 break;
         }
-
     }
+
+    private void sectionThree(int value) {
+        switch (value) {
+            case 35:
+                ArrayListEasyWay ew = new ArrayListEasyWay();
+                ew.mainArraylistEasyWay();
+                break;
+            case 36:
+                LinkedLists ll = new LinkedLists();
+                ll.mainLinkedLists();
+                break;
+            case 37:
+                HashMapviaKey hmvk = new HashMapviaKey();
+                hmvk.mainMapViaKey();
+                break;
+            case 38:
+                SortedMaps sm = new SortedMaps();
+                sm.mainSortedMaps();
+                break;
+            case 39:
+                Sets sts = new Sets();
+                sts.mainSets();
+                break;
+            case 40:
+                CustomObjectsInSetsAndMaps coism = new CustomObjectsInSetsAndMaps();
+                coism.mainCustomObjectsIn();
+                break;
+            default:
+                System.out.println("There is no course with that code");
+                break;
+        }
+    }
+
 }
